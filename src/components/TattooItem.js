@@ -1,10 +1,13 @@
 
-function TattooItem() {
+function TattooItem(props) {
+
+  const { tattoo } = props;
+
   return (
     <div>
         <div className='tattoo-item'>
-                <img src='/images/hanni_1.jpg' />
-                <h4>ต่ายน้อย 1</h4>
+                <img src= {tattoo.thumnailUrl} />
+                <h4>{tattoo.title}</h4>
         </div>
     </div>
   )
